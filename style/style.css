@@ -1,0 +1,165 @@
+/* Common font and utilities */
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background-color: rgba(255, 144, 14, 0.1); */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header menu-bar style css */
+.header {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+}
+
+.company-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+
+.menu .menu-bar {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-bar a {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(61, 51, 51);
+    text-decoration: none;
+}
+
+/* Company Brand style */
+.brands,
+.brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand {
+    width: 40vw;
+    margin-bottom: 50px;
+}
+
+.brand-title {
+    text-align: center;
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.brand-description {
+    text-align: center;
+}
+
+.btn-primary {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: coral;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.brands img {
+    width: 60vw;
+}
+
+/* feature-container style css */
+.first-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 55vw;
+    margin-top: 100px;
+}
+
+.first-container img {
+    width: 200px;
+    height: 200px;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+/* second-container */
+.second-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 60vw;
+    margin-top: 100px;
+}
+
+.second-container img {
+    width: 600px;
+    height: 950px;
+}
+
+.second-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+
+.second-description {
+    font-weight: 400;
+    font-size: 14px;
+    color: #727272;
+}
+
+.second-sub-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: #131313;
+}
+
+.second-sub-description {
+    font-weight: 400;
+    font-size: 14px;
+    color: #727272;
+}
+
+.box {
+    padding: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+}
+
+.btn-secondary {
+    font-size: 16PX;
+    font-weight: 500;
+    color: white;
+    width: 200PX;
+    height: 100PX;
+    background-color: coral;
+    border-radius: 5px;
+    padding: 20PX;
+    border: 0;
+}
+
+.btn-secondary .experience {
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+}
