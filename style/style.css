@@ -9,6 +9,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 /* Header menu-bar style css */
@@ -63,6 +64,9 @@ body {
 
 .brand-description {
     text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: #727272;
 }
 
 .btn-primary {
@@ -109,6 +113,7 @@ body {
     gap: 50px;
     width: 60vw;
     margin-top: 100px;
+    padding: 20px;
 }
 
 .second-container img {
@@ -122,23 +127,18 @@ body {
     color: #131313;
 }
 
-.second-description {
+.description {
     font-weight: 400;
     font-size: 14px;
     color: #727272;
 }
 
-.second-sub-title {
+.sub-title {
     font-weight: 600;
     font-size: 20px;
     color: #131313;
 }
 
-.second-sub-description {
-    font-weight: 400;
-    font-size: 14px;
-    color: #727272;
-}
 
 .box {
     padding: 10px;
@@ -162,4 +162,95 @@ body {
     font-weight: 700;
     font-size: 40px;
     color: #FFFFFF;
+}
+
+/* Some Facts / third section */
+.third-container{
+    width: 55vw;
+}
+.some-facts {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-bottom: 50px;
+}
+
+.facts-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.facts-icon .icon-box{
+    text-align: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #FF900E;
+    transition: width 2s, height 2s, transform 5s;
+    padding: 10px;
+}
+
+.icon-box:hover{
+    width: 160px;
+    height: 160px;
+    transform: rotate(20deg);
+    background-color: aquamarine;
+}
+
+.facts-icon img {
+    width: 25px;
+    height: 25px;
+}
+/* Sponsor section */
+.sponsor-container .sponsors{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 50px;
+} 
+.sponsor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 55vw;
+    margin: 20px;
+}
+.sponsor-title{
+    font-weight: 700;
+    font-size: 30px;
+    color: #131313;
+}
+
+/* footer section */
+.footer-container{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55vw;
+    height: 3vw;
+    background-color: bisque;
+}
+
+/* Media Query  style*/
+@media screen and (max-width: 576px) {
+    /* .header{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    } */
+    .header, .first-container, .second-container, .facts-icon, .sponsor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    
 }
