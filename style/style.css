@@ -9,24 +9,23 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 
 /* Header menu-bar style css */
 .header {
-    background-color: rgba(255, 144, 14, 0.1);
+    background-color: #FFF8F3
 }
 
 .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px 150px;
+    padding-top: 30px;
 }
 
 .company-title {
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 600;
     color: black;
 }
 
@@ -49,10 +48,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
 }
 
 .brand {
-    width: 40vw;
+    width: 30vw;
     margin-bottom: 50px;
 }
 
@@ -89,8 +89,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    width: 55vw;
+    gap: 150px;
+    width: 60vw;
     margin-top: 100px;
 }
 
@@ -104,6 +104,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+
 }
 
 /* second-container */
@@ -113,17 +114,18 @@ body {
     gap: 50px;
     width: 60vw;
     margin-top: 100px;
-    padding: 20px;
+    padding: 50px;
 }
 
 .second-container img {
     width: 600px;
     height: 950px;
+    padding: 5px;
 }
 
 .second-title {
     font-weight: 700;
-    font-size: 45px;
+    font-size: 35px;
     color: #131313;
 }
 
@@ -141,7 +143,7 @@ body {
 
 
 .box {
-    padding: 10px;
+    padding: 20px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 5px;
 }
@@ -165,9 +167,10 @@ body {
 }
 
 /* Some Facts / third section */
-.third-container{
-    width: 55vw;
+.third-container {
+    width: 60vw;
 }
+
 .some-facts {
     display: flex;
     flex-direction: column;
@@ -179,9 +182,10 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+
 }
-.facts-icon .icon-box{
+
+.facts-icon .icon-box {
     text-align: center;
     align-items: center;
     width: 150px;
@@ -191,7 +195,7 @@ body {
     padding: 10px;
 }
 
-.icon-box:hover{
+.icon-box:hover {
     width: 160px;
     height: 160px;
     transform: rotate(20deg);
@@ -202,55 +206,97 @@ body {
     width: 25px;
     height: 25px;
 }
+
 /* Sponsor section */
-.sponsor-container .sponsors{
+.sponsor-container .sponsors {
     display: flex;
     text-align: center;
     flex-direction: column;
-    padding: 50px;
-} 
-.sponsor{
+    padding: 100px;
+}
+
+.sponsor {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 55vw;
+    width: 60vw;
     margin: 20px;
 }
-.sponsor-title{
+
+.sponsor-title {
     font-weight: 700;
     font-size: 30px;
     color: #131313;
 }
 
+/* contact style */
+.contact {
+    display: flex;
+    gap: 70px;
+    background: #FFF8F3;
+    padding: 80px 80px;
+    width: 60vw;
+    margin-top: 30px;
+}
+
+.contact .section-title {
+    text-align: left;
+}
+
+.contact input[type="text"],
+input[type="email"],
+textarea {
+    margin-bottom: 24px;
+    border: 0;
+    width: 100%;
+    padding: 18px 30px;
+}
+
+input {
+    height: 64px;
+}
+
+.contact a {
+    text-decoration: none;
+}
+
 /* footer section */
-.footer-container{
+.footer-container {
     display: flex;
     justify-content: center;
-    margin: 100px;
+    margin-top: 50px;
 }
-.footer{
+
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 55vw;
-    height: 3vw;
-    background-color: bisque;
+    width: 60vw;
+    height: 100px;
+    background-color: #FFF8F3;
 }
 
 /* Media Query  style*/
 @media screen and (max-width: 576px) {
-    /* .header{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        width: 100%;
-    } */
-    .header, .first-container, .second-container, .facts-icon, .sponsor{
+    .menu, .menu-bar, .brand, .brand-image, .first-container, .image-text, .second-container-text, .box-image, .some-facts, .facts-icon, .sponsors, .sponsor, .contact, .footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        /* width: 100%; */
+        
     }
-    
+    .second-container, .third-container, .sponsor-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 100%; */
+        
+    }
+    .image-container, .image-text{
+        display: flex;
+        flex-direction: column;
+    }
     
 }
