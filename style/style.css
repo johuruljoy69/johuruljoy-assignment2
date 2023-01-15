@@ -24,8 +24,8 @@ body {
 }
 
 .company-title {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 800;
     color: black;
 }
 
@@ -105,6 +105,24 @@ body {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
 
+}
+
+.feature-title {
+    font-weight: 500;
+    font-size: 45px;
+    color: #727272;
+}
+
+.feature-title-2 {
+    font-weight: 500;
+    font-size: 45px;
+    color: #131313;
+}
+
+.feature-title-3 {
+    font-weight: 500;
+    font-size: 45px;
+    color: #FF900E;
 }
 
 /* second-container */
@@ -278,30 +296,49 @@ input {
 
 /* Media Query  style*/
 @media screen and (max-width: 600px) {
-    .menu, .menu-bar, .brand, .brand-image, .first-container, .image-text, .second-container-text, .box-image, .some-facts, .facts-icon, .sponsors, .sponsor, .contact, .footer{
+
+    .menu,
+    .menu-bar,
+    .brand,
+    .brand-image,
+    .first-container,
+    .image-text,
+    .second-container-text,
+    .box-image,
+    .some-facts,
+    .facts-icon,
+    .sponsors,
+    .sponsor,
+    .contact,
+    .footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
         margin: 5px;
-                
+
     }
-    .second-container, .third-container, .sponsor-container{
+
+    .second-container,
+    .third-container,
+    .sponsor-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
-        
+
     }
-    .image-container, .image-text{
+
+    .image-container,
+    .image-text {
         display: flex;
         flex-direction: column;
     }
-    
-    .footer{
+
+    .footer {
         text-align: center;
     }
-    
+
 }
