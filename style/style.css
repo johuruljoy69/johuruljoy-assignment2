@@ -277,26 +277,30 @@ input {
 }
 
 /* Media Query  style*/
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
     .menu, .menu-bar, .brand, .brand-image, .first-container, .image-text, .second-container-text, .box-image, .some-facts, .facts-icon, .sponsors, .sponsor, .contact, .footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* width: 100%; */
-        
+        width: 100%;
+                
     }
     .second-container, .third-container, .sponsor-container{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* width: 100%; */
+        width: 100%;
         
     }
     .image-container, .image-text{
         display: flex;
         flex-direction: column;
+    }
+    
+    .footer{
+        text-align: center;
     }
     
 }
